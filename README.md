@@ -24,4 +24,6 @@ Iremos seguir o padrão de desenvolvimento da interface como mostra o iframe aba
 
 <br/>
 
-[![Design]](https://www.figma.com/design/Gm9JhyXk8FsQt6hBcCIbB3/Rinhas.com-%2F%2F-Interface?node-id=0-1&t=pPcwnkZINqtZ6PL4-1)[];
+[![Design Homepage sem login]](https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20sem%20Login.svg)[https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20sem%20Login.svg];
+
+[![Design Homepage com login]](https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20com%20Login.svg)[https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20com%20Login.svg];
