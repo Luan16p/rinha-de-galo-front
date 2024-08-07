@@ -24,6 +24,6 @@ Iremos seguir o padrão de desenvolvimento da interface como mostra o iframe aba
 
 <br/>
 
-[![Design Homepage sem login]](https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20sem%20Login.svg)[https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20sem%20Login.svg];
+[Design Homepage sem login](https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20sem%20Login.svg)
 
-[![Design Homepage com login]](https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20com%20Login.svg)[https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20com%20Login.svg];
+[Design Homepage com login](https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20com%20Login.svg)
