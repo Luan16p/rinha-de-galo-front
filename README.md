@@ -22,4 +22,5 @@ Iremos seguir o padrão de desenvolvimento da interface como mostra o iframe aba
 
 * Tela de HomePage + Login - será absolutamente semelhante à tela padrão, salvo o painel de controle de rinhas, que será o escopo central do projeto, nele podemos tanto batalhar com um usuario aleatorio, um amigo, batalhas amistosas aleatorias OU com rank, alem disso ficamos a um clique de acessar o metodo de treino dos galos, então isso deixará a interface mais intuitiva para o usuario.
 
+<br/>
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FGm9JhyXk8FsQt6hBcCIbB3%2FRinhas.com-%252F%252F-Interface%3Fnode-id%3D0-1%26t%3DpPcwnkZINqtZ6PL4-1" allowfullscreen></iframe>
