@@ -1,4 +1,4 @@
-<div align="center">
+<div>
   <img src="https://github.com/Luan16p/rinha-de-galo-front/blob/main/public/images/rinha.png?raw=true" width="300" height="300" alt="Imagem">
 </div>
 
