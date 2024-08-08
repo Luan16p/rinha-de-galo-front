@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://github.com/Luan16p/rinha-de-galo-front/blob/main/public/images/rinha.png?raw=true" width="300" height="300" alt="Imagem">
+</div>
+
 # Rinha de Galo - Front-end
 
 Esse é o projeto do front-end da rinha de galo, aqui serão inseridas as  informações referentes a interface do projeto.
