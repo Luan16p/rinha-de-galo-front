@@ -1,0 +1,99 @@
+main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main a {
+    color: #222;
+    font-family: 'Hind';
+    font-size: 20px;
+}
+
+.section-viewer {
+    width: 99%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.section-viewer .box-show-info-fight {
+    width: inherit;
+    height: 250px;
+    border-left: 5px solid #FF5A58;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px #919191;
+}
+
+.title {
+    font-family: 'Judson';
+    font-weight: 300;
+    color: #222;
+}
+
+.description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.no-cockfight {
+    width: 100px;
+    height: auto;
+    opacity: .5;
+    user-select: none;
+}
+
+.ranks {
+    width: 99%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.ranks .ranks-table {
+    padding: 20px;
+    width: inherit;
+    border-left: 5px solid #FF5A58;
+    box-shadow: 0px 0px 10px #919191;
+    border-spacing: 0; 
+    display: flex;
+    flex-direction: column;
+}
+
+.header-table {
+    font-weight: 700;
+    text-align: center;
+}
+
+.ranks .ranks-table tr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ranks .ranks-table tr td {
+    font-family: 'Hind';
+    text-align: center;
+    padding: 5px;
+    width: 25%;
+}
+
+@media screen and (max-width: 550px) {
+    .ranks .ranks-table tr {
+        flex-direction: column;
+        border-bottom: 1px solid #919191;
+    }
+
+    .ranks-table {
+        gap: 30px;
+    }
+}
