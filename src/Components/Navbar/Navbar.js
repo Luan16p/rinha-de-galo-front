@@ -3,8 +3,9 @@ import './Navbar.css'
 
 import { Link } from 'react-router-dom';
 import Dropdown from '../MUI/Dropdown';
+import ProfileOptions from '../MUI/ProfileOptions';
 
-const Navbar = () => {
+const Navbar = ({auth}) => {
     return (
         <header>
             <nav className='navbar'>
@@ -15,11 +16,9 @@ const Navbar = () => {
                 </Link>
 
                 <div className='navlist'>
-                    <Link className="btn-entrar" to="/entrar">
-                        Entrar
-                    </Link>
-
                     <Dropdown/>
+                    
+                    {!auth ? <Link className="btn-entrar" to="/entrar">Entrar </Link> : <ProfileOptions/>}
                 </div>
             </nav>
         </header>
