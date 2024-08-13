@@ -9,7 +9,9 @@ const Navbar = ({auth}) => {
     return (
         <header>
             <nav className='navbar'>
-                <div className='navbar-flex-grep'></div>
+                <div className='navlist noresp'>                    
+                    {!auth ? <Link className="btn-entrar" to="/entrar">Entrar </Link> : <ProfileOptions/>}
+                </div>
                 <Link className="Logo" to={"/"}>
                     <img src="images/logo.png" alt='Logo do App'/>
                     <h2>Rinhas.com</h2>
@@ -17,8 +19,7 @@ const Navbar = ({auth}) => {
 
                 <div className='navlist'>
                     <Dropdown/>
-                    
-                    {!auth ? <Link className="btn-entrar" to="/entrar">Entrar </Link> : <ProfileOptions/>}
+                    <div className='resp'>{!auth ? <Link className="btn-entrar" to="/entrar">Entrar </Link> : <ProfileOptions/>}</div>
                 </div>
             </nav>
         </header>

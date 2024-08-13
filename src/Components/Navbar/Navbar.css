@@ -51,6 +51,10 @@
     text-decoration: none;
 }
 
+.resp {
+    display: none;
+}
+
 .navlist .btn-profile {
     padding: 4px 20px;
     border: 0;
@@ -79,8 +83,13 @@
 }
 
 @media screen and (max-width: 650px) {
-    .navbar-flex-grep {
+
+    .noresp {
         display: none;
+    }
+
+    .resp {
+        display: flex;
     }
     .navbar {
         flex-direction: column;
