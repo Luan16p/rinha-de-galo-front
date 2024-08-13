@@ -41,6 +41,10 @@
     border-radius: 4px;
     color: #FF5A58;
     font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
 }
 
 .navlist .btn-explore {
