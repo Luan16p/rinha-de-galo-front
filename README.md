@@ -1,5 +1,5 @@
 <div>
-  <img src="https://github.com/Luan16p/rinha-de-galo-front/blob/main/public/images/rinha.png?raw=true" width="300" height="300" alt="Imagem">
+  <img src="public/images/gifwalkingchicken_stardew_valley.gif" width="200" height="200" alt="Imagem">
 </div>
 
 # Rinha de Galo - Front-end
