@@ -1,4 +1,4 @@
-<div>
+<div style="display: flex; justify-content: space-between">
   <img src="public/images/gifwalkingchicken_stardew_valley.gif" width="200" height="200" alt="Galinha do Stardew Valley">
   <img src="public/images/chicken_pixel.jfif" width="200" height="200" alt="Galinha de Pixel Art">
 </div>
