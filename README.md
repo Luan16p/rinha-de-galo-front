@@ -1,5 +1,6 @@
 <div>
-  <img src="public/images/gifwalkingchicken_stardew_valley.gif" width="200" height="200" alt="Imagem">
+  <img src="public/images/gifwalkingchicken_stardew_valley.gif" width="200" height="200" alt="Galinha do Stardew Valley">
+  <img src="public/images/chicken_pixel.jfif" width="200" height="200" alt="Galinha de Pixel Art">
 </div>
 
 # Rinha de Galo - Front-end
