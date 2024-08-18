@@ -1,0 +1,41 @@
+.sign-in-page {
+    background: url(/public/images/galinhas-brigando-fundo.jfif) center center;
+    image-rendering:optimizeQuality;    
+}
+.sign-in {
+    width: 95%;
+    max-width: 789px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    background: #ffffff;
+}
+
+.sign-in .title {
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+}
+
+.sign-in .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sign-in .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.sign-in .buttons button, .sign-in .buttons a {
+    width: 500px;
+}
+
+.sign-in span {
+    font-family: 'Hind';
+    user-select: none;
+}
