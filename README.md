@@ -1,5 +1,4 @@
 <div style="display: flex; justify-content: space-between; width: 100%">
-  <img src="public/images/gifwalkingchicken_stardew_valley.gif" width="200" height="200" alt="Galinha do Stardew Valley">
   <img src="public/images/chicken_pixel.jfif" width="200" height="200" alt="Galinha de Pixel Art">
 </div>
 
@@ -18,17 +17,3 @@ O Aplicativo tem a função de ser meramente educacional e pra entreterimento, Q
 ## Tecnologias
 
 A principio usarei ReactJS para criar a interface, não é a melhor escolha mas devido a sua variedade de bibliotecas para estilo, não é a pior tambem.
-
-## Interface
-
-Iremos seguir o padrão de desenvolvimento da interface como mostra o iframe abaixo, isso é apenas um figma e não reflete necessariamente na maneira como ficará a interface no final, isso é apenas um norte para o caminho certo, abaixo podemos ver:
-
-* Tela de HomePage padrão - será mostrado alguns componentes como as rinhas recentes e as rinhas ao vivo (Um apendice: Não tenho total certeza se eu irei LITERALMENTE codificar um sistema que exiba e faça aparecer as rinhas em tempo real, Aceito Pull-request's); E a tabela de Ranks gerais de todos os usuarios, com base no numero de vitorias dos usuarios), esses componentes vão ser exibidos sem o login do usuario.
-
-* Tela de HomePage + Login - será absolutamente semelhante à tela padrão, salvo o painel de controle de rinhas, que será o escopo central do projeto, nele podemos tanto batalhar com um usuario aleatorio, um amigo, batalhas amistosas aleatorias OU com rank, alem disso ficamos a um clique de acessar o metodo de treino dos galos, então isso deixará a interface mais intuitiva para o usuario.
-
-<br/>
-
-![Design Homepage sem login](https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20sem%20Login.svg)
-
-![Design Homepage com login](https://raw.githubusercontent.com/Luan16p/rinha-de-galo-front/5837a57907675751bc8915416d208c478b0c1515/public/figma/Home%20com%20Login.svg)
