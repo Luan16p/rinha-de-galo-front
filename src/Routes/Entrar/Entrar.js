@@ -5,43 +5,42 @@ import { Navigate } from "react-router-dom";
 import { Button, TextField } from '@mui/material';
 
 const Entrar = ({ auth }) => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const [credentials, setCredentials] = useState({ username: '', password: '' });
 
     if (auth) {
-        return <Navigate to="/" />
+        return <Navigate to="/" />;
     }
 
-    async function handleChangeUsername(e) {
-        setUsername(e.target.value);
-    }
-    
-    async function handleChangePassword(e) {
-        setPassword(e.target.value);
-    }
+    const handleChange = (e) => {
+        const { id, value } = e.target;
+        setCredentials(prevState => ({
+            ...prevState,
+            [id]: value
+        }));
+    };
 
-    async function postFormData(e) {
+    const postFormData = async (e) => {
         e.preventDefault();
 
         try {
             const response = await fetch(`http://${process.env.REACT_APP_API_BASE_URL}submit-credentials`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ username, password }),
+                body: JSON.stringify(credentials),
             });
 
             if (!response.ok) {
-                throw new Error('Erro na resposta da requisição');
+                throw new Error('O Servidor devolveu uma mensagem de erro, mas a requisição foi enviada!');
             }
 
             const data = await response.json();
             console.log(data);
 
-        } catch (e) {
-            console.error("Erro ao validar requisição", e);
+        } catch (error) {
+            console.error("Erro ao enviar requisição para o servidor, verifique se ele está funcionando corretamente!");
         }
-    }
-    
+    };
+
     return (
         <main className='sign-in-page'>
             <form className='sign-in' onSubmit={postFormData}>
@@ -51,8 +50,20 @@ const Entrar = ({ auth }) => {
                 </div>
 
                 <div className='input-group'>
-                    <TextField fullWidth label="Nome de Usuario" type='text' onChange={handleChangeUsername} id="username" />
-                    <TextField fullWidth label="Senha" type='password' onChange={handleChangePassword} id="password" />
+                    <TextField 
+                        fullWidth 
+                        label="Nome de Usuário" 
+                        type='text' 
+                        onChange={handleChange} 
+                        id="username" 
+                    />
+                    <TextField 
+                        fullWidth 
+                        label="Senha" 
+                        type='password' 
+                        onChange={handleChange} 
+                        id="password" 
+                    />
                 </div>
 
                 <div className='buttons'>
@@ -63,6 +74,6 @@ const Entrar = ({ auth }) => {
             </form>
         </main>
     );
-}
+};
 
 export default Entrar;
