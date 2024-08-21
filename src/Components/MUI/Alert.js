@@ -2,12 +2,8 @@ import * as React from 'react';
 
 import Alert from '@mui/material/Alert';
 
-function AlertUsers() {
-  return (
-    <Alert severity="info">
-      Atenção: Este conteúdo é apenas uma brincadeira. Rinhas de galo são ilegais e cruéis. Jamais promova ou participe de qualquer atividade desse tipo.
-    </Alert>
-  );
+function AlertUsers({place, type}) {
+  return <Alert severity={type || "info"}>{place || "Mensagem não definida"}</Alert>;
 }
 
 export default AlertUsers;
