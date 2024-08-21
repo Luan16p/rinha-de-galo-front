@@ -12,7 +12,7 @@ const PaginaInicial = ({auth}) => {
         <>
         <Navbar auth={auth}/>
         
-        <main>
+        <main className='pagina-inicial'>
 
             {  auth ? <PainelRinhas/> : null }
             
@@ -21,7 +21,7 @@ const PaginaInicial = ({auth}) => {
             <RanksCampeoes/>
         </main>
 
-        <AlertUsers/>
+        <AlertUsers type={"error"} place={" Atenção: Este conteúdo é apenas uma brincadeira. Rinhas de galo são ilegais e cruéis. Jamais promova ou participe de qualquer atividade desse tipo."}/>
         </>
     );
 }

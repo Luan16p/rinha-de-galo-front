@@ -1,4 +1,4 @@
-main {
+.pagina-inicial {
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@ main {
     align-items: center;
 }
 
-main a {
+.pagina-inicial a {
     color: #222;
     font-family: 'Hind';
     font-size: 20px;
