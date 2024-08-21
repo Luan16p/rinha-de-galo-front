@@ -19,7 +19,7 @@ const Navbar = ({auth}) => {
 
                 <div className='navlist'>
                     <Dropdown/>
-                    <div className='resp'>{!auth ? <Link className="btn-entrar" to="/entrar">Entrar </Link> : <ProfileOptions/>}</div>
+                    <div className='resp'>{!auth ? <Link className="btn-entrar" to="/sign-in">Entrar </Link> : <ProfileOptions/>}</div>
                 </div>
             </nav>
         </header>
