@@ -3,10 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './Styles/Global.css';
 import './Styles/Fonts.css';
 
-import Navbar from './Components/Navbar/Navbar';
-
 import RoutesConstructor from './RoutesConstructor';
-import AlertUsers from './Components/MUI/Alert';
 
 
 function App() {
@@ -16,10 +13,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar auth={Auth}/>
       <RoutesConstructor auth={Auth}/>
-
-      <AlertUsers/>
     </BrowserRouter>
   );
 }
