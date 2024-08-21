@@ -17,7 +17,7 @@ const data = [
   { name: "Suporte", href: "/support" }
 ];
 
-export default function TopDrawer() {
+function DropDown() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const toggleDrawer = (open) => (event) => {
@@ -50,3 +50,5 @@ export default function TopDrawer() {
     </div>
   );
 }
+
+export default DropDown;
