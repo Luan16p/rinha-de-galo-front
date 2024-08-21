@@ -10,7 +10,7 @@ const Navbar = ({auth}) => {
         <header>
             <nav className='navbar'>
                 <div className='navlist noresp'>                    
-                    {!auth ? <Link className="btn-entrar" to="/entrar">Entrar </Link> : <ProfileOptions/>}
+                    {!auth ? <Link className="btn-entrar" to="/sign-in">Entrar </Link> : <ProfileOptions/>}
                 </div>
                 <Link className="Logo" to={"/"}>
                     <img src="images/logo.png" alt='Logo do App'/>
