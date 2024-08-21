@@ -1,5 +1,5 @@
 <div style="display: flex; justify-content: space-between; width: 100%">
-  <img src="public/images/chicken_pixel.jfif" width="200" height="200" alt="Galinha de Pixel Art">
+  <img src="public/images/rooster-fighter.png" width="200" height="200" alt="Galinha de Pixel Art">
 </div>
 
 # Rinha de Galo - Front-end
