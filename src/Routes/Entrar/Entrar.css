@@ -1,6 +1,10 @@
 .sign-in-page {
+    padding: 50px;
     background: url(/public/images/galinhas-brigando-fundo.jfif) center center;
-    image-rendering:optimizeQuality;    
+    image-rendering:optimizeQuality;  
+    display: flex;
+    align-items: center;
+    justify-content: center;  
 }
 .sign-in {
     width: 95%;
