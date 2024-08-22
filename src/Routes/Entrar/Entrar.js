@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './Entrar.css';
 import { useState } from "react";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { Button, TextField } from '@mui/material';
 
 const Entrar = ({ auth }) => {
@@ -43,33 +43,40 @@ const Entrar = ({ auth }) => {
 
     return (
         <main className='sign-in-page'>
+            <div className='side-form-sign-in'></div>
+
             <form className='sign-in' onSubmit={postFormData}>
-                <div className='title'>
-                    <h2>Entre Agora mesmo!</h2>
-                    <p>Suas Rinhas de galo estão te esperando</p>
-                </div>
 
-                <div className='input-group'>
-                    <TextField 
-                        fullWidth 
-                        label="Nome de Usuário" 
-                        type='text' 
-                        onChange={handleChange} 
-                        id="username" 
-                    />
-                    <TextField 
-                        fullWidth 
-                        label="Senha" 
-                        type='password' 
-                        onChange={handleChange} 
-                        id="password" 
-                    />
-                </div>
+                <Link className="logo" to={"/"}>
+                    <img src="images/logo.png" alt='Logo do App' />
+                    <h2>Rinhas.com</h2>
+                </Link>
 
-                <div className='buttons'>
-                    <Button variant="contained" type='submit'>Entrar</Button>
-                    <span>OU</span>
-                    <Button variant="outlined" href="/sign-up">Cadastrar-se</Button>
+                <div className='form'>
+                    <h2 className='sign-in-title'>Bem vindo(a) de volta, guerreiro(a)!</h2>
+                
+                    <div className='input-group'>
+                        <TextField
+                            fullWidth
+                            label="Nome de Usuário"
+                            type='text'
+                            onChange={handleChange}
+                            id="username"
+                        />
+                        <TextField
+                            fullWidth
+                            label="Senha"
+                            type='password'
+                            onChange={handleChange}
+                            id="password"
+                        />
+                    </div>
+
+                    <div className='buttons'>
+                        <Button variant="contained" type='submit'>Entrar</Button>
+                        <span>OU</span>
+                        <Button variant="outlined" href="/sign-up">Cadastrar-se</Button>
+                    </div>
                 </div>
             </form>
         </main>
