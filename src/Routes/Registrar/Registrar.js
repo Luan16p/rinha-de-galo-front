@@ -12,14 +12,16 @@ const Registrar = ({ auth }) => {
     const [passwordConfirm, setPasswordConfirm] = useState();
 
     const handleChangeConfirm = (e) => {
-        if(passwordConfirm == "") setPasswordsAreDifferents(false); // Exceção 
+        if(passwordConfirm == "") setPasswordsAreDifferents(false); 
 
         setPasswordsAreDifferents(e.target.value != password);
         setPasswordConfirm(e.target.value);
     }
 
     const handleSubmit = () => {
-        console.log({username, password, email});
+        // Fetch API
+        // Transfere dados via POST pro endpoint em laravel preparado para suportar JSON{ Username, Email, Password }
+        // Recebe um Status
     }
 
     const isCredEmpty = () => {
