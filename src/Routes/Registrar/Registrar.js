@@ -22,6 +22,10 @@ const Registrar = ({ auth }) => {
         console.log({username, password, email});
     }
 
+    const isCredEmpty = () => {
+        return username == "" || email == "" || password == "";
+    }
+
     if (auth) {
         return <Navigate to="/" />;
     }
@@ -77,7 +81,7 @@ const Registrar = ({ auth }) => {
 
                         {passwordsAreDifferents && passwordConfirm ? <span className='password-different'>Senhas são diferentes</span> : null}
 
-                        <Button variant="outlined" type={passwordsAreDifferents ? "button" : "submit"}>Criar conta</Button>
+                        <Button variant="outlined" type={passwordsAreDifferents || isCredEmpty ? "button" : "submit"}>Criar conta</Button>
                     </div>
 
                     <Link className="already-registered" to={"/sign-in"}>
