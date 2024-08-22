@@ -2,22 +2,15 @@ import * as React from 'react';
 import './Entrar.css';
 import { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
-import { Button, TextField } from '@mui/material';
+import { Button, Chip, TextField } from '@mui/material';
 
 const Entrar = ({ auth }) => {
-    const [credentials, setCredentials] = useState({ username: '', password: '' });
+    const [username, setUsername] = useState();
+    const [password, setPassword] = useState();
 
     if (auth) {
         return <Navigate to="/" />;
     }
-
-    const handleChange = (e) => {
-        const { id, value } = e.target;
-        setCredentials(prevState => ({
-            ...prevState,
-            [id]: value
-        }));
-    };
 
     const postFormData = async (e) => {
         e.preventDefault();
@@ -26,7 +19,7 @@ const Entrar = ({ auth }) => {
             const response = await fetch(`http://${process.env.REACT_APP_API_BASE_URL}submit-credentials`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(credentials),
+                body: JSON.stringify({username, password}),
             });
 
             if (!response.ok) {
@@ -53,22 +46,22 @@ const Entrar = ({ auth }) => {
                 </Link>
 
                 <div className='form'>
-                    <h2 className='sign-in-title'>Bem vindo(a) de volta, guerreiro(a)!</h2>
+                    <h2 className='sign-in-title'>Bem vindo(a) de volta!</h2>
                 
                     <div className='input-group'>
                         <TextField
-                            fullWidth
                             label="Nome de Usuário"
                             type='text'
-                            onChange={handleChange}
+                            onChange={(e) => setUsername(e.target.value)}
                             id="username"
+                            variant="standard"
                         />
                         <TextField
-                            fullWidth
                             label="Senha"
                             type='password'
-                            onChange={handleChange}
+                            onChange={(e) => setPassword(e.target.value)}
                             id="password"
+                            variant="standard"
                         />
                     </div>
 
