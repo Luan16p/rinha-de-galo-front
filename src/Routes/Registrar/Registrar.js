@@ -34,7 +34,7 @@ const Registrar = ({ auth }) => {
 
     return (
         <main className='sign-up-page'>
-            <div className='side-form'></div>
+            <div className='side-form-sign-up'></div>
 
             <form className='sign-up' onSubmit={handleSubmit}>
 

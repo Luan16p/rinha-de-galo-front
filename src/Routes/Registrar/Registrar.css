@@ -5,11 +5,11 @@
     align-items: center;
 }
 
-.sign-up-page .side-form, .sign-up-page .sign-up {
+.sign-up-page .side-form-sign-up, .sign-up-page .sign-up {
     width: 50%;
 }
 
-.side-form {
+.side-form-sign-up {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +79,7 @@
 }
 
 @media screen and (max-width: 900px ) {
-    .side-form {
+    .side-form-sign-up {
         width: 0%;
         display: none;
     }
@@ -91,7 +91,7 @@
 } 
 
 @media screen and (max-height: 650px) {
-    .side-form {
+    .side-form-sign-up {
         width: 0%;
         display: none;
     }
